@@ -1,63 +1,26 @@
 <template>
   <v-app id="inspire">
-    <v-navigation-drawer
-      v-model="drawer"
-      app
-      clipped
-    >
-      <v-list dense>
-      <router-link to="/" style="text-decoration:none;">
-        <v-list-item link>
-          <v-list-item-action>
-            <v-icon>mdi-view-dashboard</v-icon>
-          </v-list-item-action>
-          <v-list-item-content>
-            <v-list-item-title>Home</v-list-item-title>
-          </v-list-item-content>
-        </v-list-item>
-  </router-link> 
 
-    <router-link to="/About" style="text-decoration:none;">
-        <v-list-item link>
-          <v-list-item-action>
-            <v-icon>mdi-view-dashboard</v-icon>
-            </v-list-item-action>
-           <v-list-item-content>
-              <v-list-item-title> About</v-list-item-title>
-            </v-list-item-content>
-        </v-list-item>
-   </router-link> 
-
-        <v-list-item link>
-          <v-list-item-action>
-            <v-icon>mdi-cog</v-icon>
-          </v-list-item-action>
-          <v-list-item-content>
-            <v-list-item-title>Settings</v-list-item-title>
-          </v-list-item-content>
-        </v-list-item>
-
-      </v-list>
-    </v-navigation-drawer>
-
-    <v-app-bar
-      app
-      clipped-left
-    >
-      <v-app-bar-nav-icon @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
-      <v-toolbar-title>Home</v-toolbar-title>
-    </v-app-bar>
-
+      <navbar></navbar>
+     
     <v-main>
-      <v-container
-        class="fill-height"
-        fluid
-      >
-        <v-row
-          align="center"
-          justify="center"
-        >
-        <h1 style="color:White;">Home</h1>
+      <v-container fluid>
+        <v-row align="left" justify="left" class="ml-2">
+           <div class="ml-3 col-m-5" >
+        <h1 style="color:White;">Programlamaya Giriş <code class="ml-1" style="font-size:20px">"Hello World"</code></h1>
+            </div>
+       
+            <div  class="mt-5 ml-3" style="white-space: pre-line">
+          <p class="ml-6">Kodlamaya başlayacaklar için, bu iş sıkı çalışma ve azim gerektirir.
+          Hata yapmaktan korkmayıp, araştırma yapmayı iyi bir şekilde öğrenmeniz gerekir.
+          Kısaca <span class="font-weight-bold">"Googlelamayı"</span> öğrenmeniz gerekir. 
+          Hatalarınız için veya öğrenmek için soru sormaktan çekinmeyin.</p>
+            </div>
+            <div class="mt-6 elevation-8 col-sm-7 black lighter-4" style="white-space: pre-line; margin-left:20%">
+                <p>Öncelikle sektörde hangi kısıma yöneleceğinizi seçmeniz gerekmekte bunun 
+                için hangi dillerin aşağı yukarı ne için kullanıldığını aşağıya listeledik.</p>
+            </div>
+            
         </v-row>
       </v-container>
     </v-main>
@@ -69,16 +32,15 @@
 </template>
 
 <script>
-  export default {
-    props: {
-      source: String,
-    },
-    data: () => ({
-      drawer: null,
-    }),
-    created () {
-      this.$vuetify.theme.dark = true
-    },
+import Navbar from "@/components/navbar";
+ 
+
+export default {
+  name:"About",
+  components: {
+    Navbar 
+  
   }
+}
 </script>
  

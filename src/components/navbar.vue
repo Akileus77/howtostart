@@ -1,29 +1,39 @@
 <template>
-  <v-app id="inspire">
+  <div class="container">
     <v-navigation-drawer
       v-model="drawer"
       app
       clipped
     >
       <v-list dense>
-      <router-link to="/" style="text-decoration:none;">
+      
         <v-list-item link>
           <v-list-item-action>
             <v-icon>mdi-view-dashboard</v-icon>
           </v-list-item-action>
           <v-list-item-content>
-            <v-list-item-title>Home</v-list-item-title>
+            <v-list-item-title>Anasayfa</v-list-item-title>
           </v-list-item-content>
+          
         </v-list-item>
-  </router-link> 
 
-    <router-link to="/About" style="text-decoration:none;">
+    <v-list class="ml-16">
+                    <v-list-item>
+    <router-link to="/" style="text-decoration:none;"><v-list-item-title >Başlarken</v-list-item-title></router-link> 
+                    </v-list-item>
+                <v-list-item>
+    <router-link to="/" style="text-decoration:none;"><v-list-item-title>Hedefini Belirle</v-list-item-title></router-link> 
+                </v-list-item>
+
+        </v-list>
+
+    <router-link to="/Web" style="text-decoration:none;">
         <v-list-item link>
           <v-list-item-action>
             <v-icon>mdi-view-dashboard</v-icon>
             </v-list-item-action>
            <v-list-item-content>
-              <v-list-item-title> About</v-list-item-title>
+              <v-list-item-title>Web Geliştirme</v-list-item-title>
             </v-list-item-content>
         </v-list-item>
    </router-link> 
@@ -45,25 +55,28 @@
       clipped-left
     >
       <v-app-bar-nav-icon @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
-      <v-toolbar-title>About</v-toolbar-title>
+      <v-toolbar-title>{{ $route.name }}</v-toolbar-title>
+ 
     </v-app-bar>
-
-    <v-main>
-      <v-container
-        class="fill-height"
-        fluid
-      >
-        <v-row
-          align="center"
-          justify="center"
-        >
-        <h1 style="color:White;">About</h1>
-        </v-row>
-      </v-container>
-    </v-main>
-
-    <v-footer app>
-      <span>&copy; {{ new Date().getFullYear() }}</span>
-    </v-footer>
-  </v-app>
+  </div>
+  
 </template>
+
+
+<script>
+export default {
+  name: 'navbar',
+   props: {
+      source: String,
+    },
+    data: () => ({
+      drawer: null,
+    }),
+    created () {
+      this.$vuetify.theme.dark = true
+    },
+  
+}
+</script>
+
+ 
