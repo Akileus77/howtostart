@@ -1,5 +1,5 @@
 # howtostart (Programlamaya Giriş)
-Bu dökümanlar ingilizce kaynakların ve kendi deneyimlerimiz sonucunda
+Bu dökümanlar ingilizce kaynakların ve kendi deneyimlerimizin sonucunda
 ortaya çıkmıştır.  [Dökümanı Görüntüle](kodbilen.com)
 
 # Author
