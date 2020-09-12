@@ -2,8 +2,13 @@
 Bu dökümanlar ingilizce kaynakların ve kendi deneyimlerimizin sonucunda
 ortaya çıkmıştır.  [Dökümanı Görüntüle](kodbilen.com)
 
-# Author
+# Authors (Yazarlar)
 - Aki
 
-# Links
+# Links (Linkler)
 - [Programlama Nedir](Example.com/what)
+
+# Contact (İletişim)
+
+- [Discord Server](discord.gg/kodbilen)
+- Discord Name: **Aki#8156**
