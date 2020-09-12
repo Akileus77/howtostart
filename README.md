@@ -1,6 +1,6 @@
 # howtostart (Programlamaya Giriş)
-    Bu dökümanlar ingilizce kaynakların ve kendi deneyimlerimiz sonucunda
-    ortaya çıkmıştır.  [Dökümanı Görüntüle](kodbilen.com)
+Bu dökümanlar ingilizce kaynakların ve kendi deneyimlerimiz sonucunda
+ortaya çıkmıştır.  [Dökümanı Görüntüle](kodbilen.com)
 
 # Author
 - Aki
