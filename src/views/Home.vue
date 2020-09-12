@@ -19,12 +19,12 @@
             </div>
        
             <div  class="mt-5 ml-3" style="white-space: pre-line">
-          <p class="ml-6">Kodlamaya başlayacaklar için, bu iş sıkı çalışma ve azim gerektirir.
+          <p class="ml-3">Kodlamaya başlayacaklar için, bu iş sıkı çalışma ve azim gerektirir.
           Hata yapmaktan korkmayıp, araştırma yapmayı iyi bir şekilde öğrenmeniz gerekir.
           Kısaca <span class="font-weight-bold">"Googlelamayı"</span> öğrenmeniz gerekir. 
           Hatalarınız için veya öğrenmek için soru sormaktan çekinmeyin.</p>
             </div>
-            <div class="mt-6 elevation-8 col-sm-7 black lighter-4" style="white-space: pre-line; margin-left:20%">
+            <div class="mt-4 ml-3 elevation-9 col-sm-6 black lighter-4 pr-2 rounded" style="white-space: pre-line;">
                 <p>Öncelikle sektörde hangi kısıma yöneleceğinizi seçmeniz gerekmekte bunun 
                 için hangi dillerin aşağı yukarı ne için kullanıldığını aşağıya listeledik.</p>
             </div>
