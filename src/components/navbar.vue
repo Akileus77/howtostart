@@ -6,7 +6,6 @@
       clipped
     >
       <v-list dense>
-      
         <v-list-item link>
           <v-list-item-action>
             <v-icon>mdi-view-dashboard</v-icon>
@@ -14,8 +13,9 @@
           <v-list-item-content>
             <v-list-item-title>Anasayfa</v-list-item-title>
           </v-list-item-content>
-          
-        </v-list-item>
+            <!-- TODO Dropdown olacak -->
+
+        </v-list-item> 
 
     <v-list class="ml-16">
                     <v-list-item>
@@ -55,7 +55,7 @@
       clipped-left
     >
       <v-app-bar-nav-icon @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
-      <v-toolbar-title>{{ $route.name }}</v-toolbar-title>
+      <v-toolbar-title>{{ currentRouteName }}</v-toolbar-title>
  
     </v-app-bar>
   </div>
@@ -68,6 +68,7 @@ export default {
   name: 'navbar',
    props: {
       source: String,
+     
     },
     data: () => ({
       drawer: null,
@@ -75,8 +76,23 @@ export default {
     created () {
       this.$vuetify.theme.dark = true
     },
-  
+   computed: {
+    currentRouteName() {
+        let rname = this.$route.name;
+        if(rname == "Home"){
+            return "Giriş";
+        }
+        else if(rname == "Web"){
+            return "Web Geliştirme"
+        }
+        else{
+            return "404"
+        }
+    }
 }
+
+}
+
 </script>
 
  

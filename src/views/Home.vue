@@ -1,6 +1,14 @@
 <template>
   <v-app id="inspire">
+    <!-- TODO
+    Veri tabanı bağlantısı yapılabilir
+    giriş yapıldığında daha çok içerik
+    öğrenme durumu ? ne kadar ilerledi
+    özel içerikleri görebilme
+    https://vuetifyjs.com/en/components/cards/
 
+
+     -->
       <navbar></navbar>
      
     <v-main>
@@ -20,13 +28,13 @@
                 <p>Öncelikle sektörde hangi kısıma yöneleceğinizi seçmeniz gerekmekte bunun 
                 için hangi dillerin aşağı yukarı ne için kullanıldığını aşağıya listeledik.</p>
             </div>
-            
+                <!-- TODO İçeriğe devam -->
         </v-row>
       </v-container>
     </v-main>
 
     <v-footer app>
-      <span>&copy; {{ new Date().getFullYear() }}</span>
+      <span>&copy; {{ new Date().getFullYear() }} Created By Aki</span>
     </v-footer>
   </v-app>
 </template>

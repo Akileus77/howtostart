@@ -3,7 +3,7 @@ import VueRouter from "vue-router";
 import Home from "../views/Home.vue";
 
 Vue.use(VueRouter);
-
+  //TODO DAHA FAZLA SAYFA EKLENECEK
 const routes = [
   {
     path: "/",
