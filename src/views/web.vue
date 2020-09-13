@@ -3,7 +3,7 @@
     <navbar></navbar>
 
     <v-main>
-      <v-container class="fill-height" fluid>
+      <v-container fluid>
         <v-row align="left" justify="left" class="ml-2">
            <div class="ml-3 col-m-5" >
         <h1 style="color:White;">Web Geliştirme <code class="ml-1" style="font-size:20px">html</code></h1>
