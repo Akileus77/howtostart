@@ -4,9 +4,13 @@
 
     <v-main>
       <v-container class="fill-height" fluid>
-        <v-row align="center" justify="center">
-        <h1>Web</h1>
-
+        <v-row align="left" justify="left" class="ml-2">
+           <div class="ml-3 col-m-5" >
+        <h1 style="color:White;">Web Geliştirme <code class="ml-1" style="font-size:20px">html</code></h1>
+            </div>
+        
+                <!-- TODO İçeriğe devam -->
+                <component-example/>
         </v-row>
       </v-container>
       </v-main>

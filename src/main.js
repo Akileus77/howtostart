@@ -4,7 +4,10 @@ import "./registerServiceWorker";
 import router from "./router";
 import store from "./store";
 import vuetify from "./plugins/vuetify";
- 
+import VueCodeHighlight from "vue-code-highlight";
+
+Vue.use(VueCodeHighlight);
+Vue.config.productionTip = false;
  
  
 

@@ -29,6 +29,7 @@
                 için hangi dillerin aşağı yukarı ne için kullanıldığını aşağıya listeledik.</p>
             </div>
                 <!-- TODO İçeriğe devam -->
+                <component-example/>
         </v-row>
       </v-container>
     </v-main>
@@ -44,10 +45,10 @@ import Navbar from "@/components/navbar";
  
 
 export default {
-  name:"About",
+  name:"Home",
   components: {
-    Navbar 
-  
+    Navbar,
+ 
   }
 }
 </script>
